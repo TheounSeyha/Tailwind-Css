@@ -13,96 +13,186 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="font.css" />
   </head>
-  <body>
-    <header class="font-bold">
-      <div class="flex justify-center items-center h-10 bg-yellow-300">
-        <p>
-          <span class="bg-white mr-3 rounded-lg p-1">ព័ត៏មាន</span>វគ្គសិក្សា :
-          Java Programming
-        </p>
-      </div>
-      <nav class="flex justify-between items-center bg-slate-400 h-16">
-        <ul class="flex gap-10 ml-10 items-center">
+  <header>
+    <div class="flex justify-center items-center h-10 bg-yellow-300">
+      <p class="text-sm md:text-base text-center">
+        <span class="bg-white mr-3 rounded-lg p-1">ព័ត៏មាន</span>វគ្គសិក្សា :
+        Java Programming
+      </p>
+    </div>
+
+    <nav class="bg-white border-gray-200 dark:bg-slate-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
           <img
             src="https://www.cstad.edu.kh/_next/image?url=%2Fschool-logo%2Flogo-white-version.png&w=128&q=75"
-            alt=""
-            class="w-[6rem]"
+            class="h-8"
+            alt="Flowbite Logo"
           />
-          <li>
-            <select
-              id="countries"
-              class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-30 dark:bg-slate-100 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <div class="w-44 flex justify-between">
+            <button
+              type="button"
+              class="text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              <option selected>វគ្គសិក្សា</option>
-              <option value="US">United States</option>
-              <option value="CA">Canada</option>
-              <option value="FR">France</option>
-              <option value="DE">Germany</option>
-            </select>
-          </li>
-          <li><a href="#">ប្លុក</a></li>
-          <li><a href="#">វេទិកា</a></li>
-          <li><a href="#">អំពីពួកយើង</a></li>
-          <li><a href="#">ទាញយកកម្មវិធី</a></li>
-          <li><a href="#">ចំណាត់ថ្នាក់</a></li>
-        </ul>
-
-        <div class="flex gap-10 mr-10">
-          <button class="border border-yellow-300 rounded-lg px-2">
-            ចូលប្រើ<span><i class="bx bx-lock p-2"></i></span>
-          </button>
+              ចូលប្រើ
+            </button>
+            <button
+              type="button"
+              class="text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              បង្កើតគណនី
+            </button>
+          </div>
           <button
-            class="border border-yellow-300 rounded-lg px-2 bg-yellow-300"
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text -sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
           >
-            បង្កើតគណនី
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
           </button>
         </div>
-      </nav>
-    </header>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-slate-200 md:dark:bg-slate-200 dark:border-gray-700"
+          >
+            <li>
+              <select
+                id="countries"
+                class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full md:w-30 dark:bg-slate-100 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              >
+                <option selected>វគ្គសិក្សា</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+              </select>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block mt-2 py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                aria-current="page"
+                >ប្លុក</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >វេទិកា</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >អំពីពួកយើង</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >ទាញយកកម្មវិធី</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >ចំណាត់ថ្នាក់</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <body class="battambang-thin">
     <main>
-      <section class="flex justify-center items-center gap-10 mt-10 mb-[9rem]">
-        <div class="m-auto h-auto w-[50%] mt-[2rem]">
-          <h2 class="text-yellow-300 text-[3rem] font-bold pb-5">
-            Devolopers Cambodia
+      <section
+        class="flex flex-wrap justify-center items-center gap-10 mt-10 mb-[9rem] px-5"
+      >
+        <div class="w-full md:w-[50%] mt-10">
+          <h2 class="text-yellow-300 text-[2rem] md:text-[3rem] font-bold pb-5">
+            Developers Cambodia
           </h2>
-          <p class="pb-9 w-[35rem] font-mono">
+          <p class="pb-9 font-mono text-sm md:text-base leading-relaxed">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            debitis repudiandae natus praesentium quasi.Repudiandae impedit
+            debitis repudiandae natus praesentium quasi. Repudiandae impedit
             adipisci harum veritatis in laboriosam maxime dolor nisi odio
-            molestias exercitationem neque, perferendis doloribus. odio
-            molestias exercitationem neque, perferendis doloribus. odio
+            molestias exercitationem neque, perferendis doloribus. Odio
+            molestias exercitationem neque, perferendis doloribus. Odio
             molestias exercitationem neque, perferendis doloribus.
           </p>
-          <button class="bg-yellow-300 p-3 mr-5 rounded-lg">
-            Study Now <span><i class="bx bx-right-arrow-alt"></i></span>
-          </button>
-          <button class="bg-yellow-300 p-3 rounded-lg">
-            Preregister <span><i class="bx bx-right-arrow-alt"></i></span>
-          </button>
+          <div class="flex flex-wrap gap-5">
+            <button
+              class="bg-yellow-300 px-5 py-2 rounded-lg hover:bg-blue-300"
+            >
+              Study Now <span><i class="bx bx-right-arrow-alt"></i></span>
+            </button>
+            <button
+              class="bg-yellow-300 px-5 py-2 rounded-lg hover:bg-blue-300"
+            >
+              Preregister <span><i class="bx bx-right-arrow-alt"></i></span>
+            </button>
+          </div>
         </div>
 
-        <div class="m-auto w-[20%]">
+        <div class="w-full md:w-[40%] flex flex-col items-center">
           <img
             src="https://scontent.fpnh18-1.fna.fbcdn.net/v/t39.30808-6/468854725_575285908585247_2028952310093361434_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEfgEAcDEPP74B9seFC9kDIhI7aQ8RbmrmEjtpDxFuauYrRxvvlCi-7de5MqNftGZilpyTqWLNL1O8raLKTCdSn&_nc_ohc=xboB5-NQw78Q7kNvgGj5Sx_&_nc_oc=AdgIoKueWYClVe-jMuVR8ydcV9C_k1RhdRrekBmVSxrBzYJkm2X3BcAJ9MOrmERjfCU&_nc_zt=23&_nc_ht=scontent.fpnh18-1.fna&_nc_gid=A-tT2ivXTwl4JZTC8OcEuUJ&oh=00_AYD6ZSq_eYyXEuv83-hJPUivFeDPjqF3JhbltLApxQwcYw&oe=676D7D74"
-            alt=""
-            class="rounded-lg w-[55rem] pb-5"
+            alt="Study Everywhere"
+            class="rounded-lg w-full md:w-[55rem] max-w-full pb-5"
           />
           <h2
-            class="border border-yellow-300 p-3 rounded-lg text-center font-serif"
+            class="border border-yellow-300 px-4 py-2 rounded-lg text-center hover:bg-blue-300"
           >
-            You Can Study everywhere
+            You Can Study Everywhere
             <span><i class="bx bx-search-alt"></i></span>
           </h2>
         </div>
       </section>
+
       <!-- card Container -->
 
       <section
         class="card grid grid-cols-4 mr-24 ml-24 gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1 items-center"
       >
         <div
-          class="max-w-sm  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
           <div class="flex justify-end px-4 pt-4">
             <button
@@ -157,7 +247,7 @@
           <div class="flex flex-col items-center">
             <img
               class="w-24 h-24 mb-3 rounded-full shadow-lg"
-              src="meta-logo-24.png"
+              src="AI"
               alt="Bonnie image"
             />
             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -237,7 +327,7 @@
           <div class="flex flex-col items-center">
             <img
               class="w-24 h-24 mb-3 rounded-full shadow-lg"
-              src="meta-logo-24.png"
+              src="AI"
               alt="Bonnie image"
             />
             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -317,7 +407,7 @@
           <div class="flex flex-col items-center">
             <img
               class="w-24 h-24 mb-3 rounded-full shadow-lg"
-              src="meta-logo-24.png"
+              src="AI"
               alt="Bonnie image"
             />
             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -557,7 +647,7 @@
           <div class="flex flex-col items-center">
             <img
               class="w-24 h-24 mb-3 rounded-full shadow-lg"
-              src="meta-logo-24.png"
+              src="https://static.vecteezy.com/system/resources/thumbnails/028/754/175/small_2x/ai-image-generator-3d-icon-illustrations-png.png"
               alt="Bonnie image"
             />
             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -637,7 +727,7 @@
           <div class="flex flex-col items-center">
             <img
               class="w-24 h-24 mb-3 rounded-full shadow-lg"
-              src="meta-logo-24.png"
+              src="AI"
               alt="Bonnie image"
             />
             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -717,7 +807,7 @@
           <div class="flex flex-col items-center">
             <img
               class="w-24 h-24 mb-3 rounded-full shadow-lg"
-              src="meta-logo-24.png"
+              src="AI"
               alt="Bonnie image"
             />
             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -749,7 +839,7 @@
         វគ្គសិក្សាដោយឥតគិតថ្លៃ
       </h2>
       <section
-        class="grid grid-cols-4 mr-24 ml-24 gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1 "
+        class="grid grid-cols-4 mr-24 ml-24 gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1"
       >
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
@@ -764,7 +854,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -809,7 +899,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -854,7 +944,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -899,7 +989,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -944,7 +1034,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -989,7 +1079,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1034,7 +1124,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1079,7 +1169,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1112,12 +1202,16 @@
         </div>
       </section>
 
-      <h2 class="flex justify-center items-center mt-10 mb-10 text-blue-600 text-[2rem] ">
+      <h2
+        class="flex justify-center items-center mt-10 mb-10 text-blue-600 text-[2rem]"
+      >
         វគ្គសិក្សាថ្មី
       </h2>
 
       <!-- new section ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
-      <section class="grid grid-cols-4 mr-24 ml-24 gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1">
+      <section
+        class="grid grid-cols-4 mr-24 ml-24 gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1"
+      >
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
         >
@@ -1131,7 +1225,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1168,7 +1262,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1192,7 +1286,6 @@
           </div>
         </div>
 
-
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
         >
@@ -1206,7 +1299,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1230,8 +1323,6 @@
           </div>
         </div>
 
-
-
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
         >
@@ -1245,7 +1336,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1269,7 +1360,6 @@
           </div>
         </div>
 
-
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
         >
@@ -1283,7 +1373,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1307,7 +1397,6 @@
           </div>
         </div>
 
-
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
         >
@@ -1321,7 +1410,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1345,7 +1434,6 @@
           </div>
         </div>
 
-
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
         >
@@ -1359,7 +1447,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1383,7 +1471,6 @@
           </div>
         </div>
 
-
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
         >
@@ -1397,7 +1484,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1423,13 +1510,15 @@
       </section>
 
       <!-- new section ............................................ -->
-        <h2
+      <h2
         class="flex justify-center items-center mt-10 mb-10 text-blue-600 text-[2rem]"
       >
         វគ្គសិក្សាបញ្ចុះតម្លៃ
       </h2>
 
-      <section class="grid grid-cols-4 mr-24 ml-24 gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1">
+      <section
+        class="grid grid-cols-4 mr-24 ml-24 gap-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1"
+      >
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
         >
@@ -1443,7 +1532,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1456,8 +1545,8 @@
                 href="#"
                 class="inline-flex items-center px-3 py-1 text-md font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-yellow-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                15000៛
-              </a><span class="line-through text-[20px]">19000៛</span>
+                15000៛ </a
+              ><span class="line-through text-[20px]">19000៛</span>
               <button>
                 <span class="text-[2rem] text-blue-500"
                   ><i class="bx bxs-cart-add"></i
@@ -1480,7 +1569,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1493,85 +1582,8 @@
                 href="#"
                 class="inline-flex items-center px-3 py-1 text-md font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-yellow-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                15000៛
-              </a><span class="line-through text-[20px]">19000៛</span>
-              <button>
-                <span class="text-[2rem] text-blue-500"
-                  ><i class="bx bxs-cart-add"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-
-        <div
-          class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
-        >
-          <a href="#">
-            <img
-              class="rounded-t-lg"
-              src="https://i.pinimg.com/736x/bb/ed/6b/bbed6ba497b25c52e2d015c0c08f3401.jpg"
-              alt=""
-            />
-          </a>
-          <div class="p-5">
-            <a href="#">
-              <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
-              >
-                ក្លាយជា Back-End Devolopers Spring Framework
-              </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              9 <span><i class="bx bxs-star p-3"></i>(100 reviews)</span>
-            </p>
-            <div class="flex justify-between items-center">
-              <a
-                href="#"
-                class="inline-flex items-center px-3 py-1 text-md font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-yellow-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                15000៛
-              </a><span class="line-through text-[20px]">19000៛</span>
-              <button>
-                <span class="text-[2rem] text-blue-500"
-                  ><i class="bx bxs-cart-add"></i
-                ></span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div
-          class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
-        >
-          <a href="#">
-            <img
-              class="rounded-t-lg"
-              src="https://i.pinimg.com/736x/bb/ed/6b/bbed6ba497b25c52e2d015c0c08f3401.jpg"
-              alt=""
-            />
-          </a>
-          <div class="p-5">
-            <a href="#">
-              <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
-              >
-                ក្លាយជា Back-End Devolopers Spring Framework
-              </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-              9 <span><i class="bx bxs-star p-3"></i>(100 reviews)</span>
-            </p>
-            <div class="flex justify-between items-center">
-              <a
-                href="#"
-                class="inline-flex items-center px-3 py-1 text-md font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-yellow-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                15000៛
-              </a><span class="line-through text-[20px]">19000៛</span>
+                15000៛ </a
+              ><span class="line-through text-[20px]">19000៛</span>
               <button>
                 <span class="text-[2rem] text-blue-500"
                   ><i class="bx bxs-cart-add"></i
@@ -1594,7 +1606,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1607,8 +1619,8 @@
                 href="#"
                 class="inline-flex items-center px-3 py-1 text-md font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-yellow-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                15000៛
-              </a><span class="line-through text-[20px]">19000៛</span>
+                15000៛ </a
+              ><span class="line-through text-[20px]">19000៛</span>
               <button>
                 <span class="text-[2rem] text-blue-500"
                   ><i class="bx bxs-cart-add"></i
@@ -1617,7 +1629,6 @@
             </div>
           </div>
         </div>
-
 
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
@@ -1632,7 +1643,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1645,8 +1656,8 @@
                 href="#"
                 class="inline-flex items-center px-3 py-1 text-md font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-yellow-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                15000៛
-              </a><span class="line-through text-[20px]">19000៛</span>
+                15000៛ </a
+              ><span class="line-through text-[20px]">19000៛</span>
               <button>
                 <span class="text-[2rem] text-blue-500"
                   ><i class="bx bxs-cart-add"></i
@@ -1655,7 +1666,6 @@
             </div>
           </div>
         </div>
-
 
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
@@ -1670,7 +1680,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1683,8 +1693,8 @@
                 href="#"
                 class="inline-flex items-center px-3 py-1 text-md font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-yellow-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                15000៛
-              </a><span class="line-through text-[20px]">19000៛</span>
+                15000៛ </a
+              ><span class="line-through text-[20px]">19000៛</span>
               <button>
                 <span class="text-[2rem] text-blue-500"
                   ><i class="bx bxs-cart-add"></i
@@ -1693,7 +1703,6 @@
             </div>
           </div>
         </div>
-
 
         <div
           class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
@@ -1708,7 +1717,7 @@
           <div class="p-5">
             <a href="#">
               <h5
-                class="mb-2 text-xl font-sans tracking-tight text-gray-900 dark:text-black"
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
               >
                 ក្លាយជា Back-End Devolopers Spring Framework
               </h5>
@@ -1721,8 +1730,82 @@
                 href="#"
                 class="inline-flex items-center px-3 py-1 text-md font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-yellow-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                15000៛
-              </a><span class="line-through text-[20px]">19000៛</span>
+                15000៛ </a
+              ><span class="line-through text-[20px]">19000៛</span>
+              <button>
+                <span class="text-[2rem] text-blue-500"
+                  ><i class="bx bxs-cart-add"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="https://i.pinimg.com/736x/bb/ed/6b/bbed6ba497b25c52e2d015c0c08f3401.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
+              >
+                ក្លាយជា Back-End Devolopers Spring Framework
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              9 <span><i class="bx bxs-star p-3"></i>(100 reviews)</span>
+            </p>
+            <div class="flex justify-between items-center">
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-1 text-md font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-yellow-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                15000៛ </a
+              ><span class="line-through text-[20px]">19000៛</span>
+              <button>
+                <span class="text-[2rem] text-blue-500"
+                  ><i class="bx bxs-cart-add"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="https://i.pinimg.com/736x/bb/ed/6b/bbed6ba497b25c52e2d015c0c08f3401.jpg"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-xl tracking-tight text-gray-900 dark:text-black"
+              >
+                ក្លាយជា Back-End Devolopers Spring Framework
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              9 <span><i class="bx bxs-star p-3"></i>(100 reviews)</span>
+            </p>
+            <div class="flex justify-between items-center">
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-1 text-md font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-yellow-400 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                15000៛ </a
+              ><span class="line-through text-[20px]">19000៛</span>
               <button>
                 <span class="text-[2rem] text-blue-500"
                   ><i class="bx bxs-cart-add"></i
@@ -1735,109 +1818,550 @@
 
       <!-- new section ................................................................. -->
 
-       <h2
+      <h2
         class="flex justify-center items-center mt-10 mb-10 text-blue-600 text-[2rem]"
       >
         លក្ខណពិសេសរបស់យើង
       </h2>
 
-      <section class="flex justify-evenly mb-10">
- 
-        <div class="w-[30rem]">
-          <h3 class="font-light text-[40px] text-yellow-200 p-4">FOR STUDENTS</h3>
-          <P class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, quasi. Tempora, non voluptatem quia dolore, eos nesciunt doloremque veniam quis minus ipsa eum deleniti magni quibusdam voluptatum. Minima deleniti ipsa quidem earum, a inventore aliquid cupiditate tenetur eos amet dolores, dolorem iusto officia, quibusdam unde dolorum excepturi voluptatem libero corrupti.</P>
+      <section class="flex justify-center lg:justify-evenly gap-8 mb-10 p-4">
+        <div class="w-full lg:w-[30rem]">
+          <h3
+            class="font-light text-[30px] sm:text-[35px] lg:text-[40px] text-yellow-200 p-2 sm:p-4"
+          >
+            FOR STUDENTS
+          </h3>
+          <p class="text-base sm:text-lg lg:text-xl leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
+            quasi. Tempora, non voluptatem quia dolore, eos nesciunt doloremque
+            veniam quis minus ipsa eum deleniti magni quibusdam voluptatum.
+            Minima deleniti ipsa quidem earum, a inventore aliquid cupiditate
+            tenetur eos amet dolores, dolorem iusto officia, quibusdam unde
+            dolorum excepturi voluptatem libero corrupti.
+          </p>
         </div>
 
-        <div>
-          <img src="https://media.assettype.com/afkgaming/import/media/images/79157-8654d3cc20b7721bf2542d221ea235be.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max" alt="" class="h-auto w-[35rem] rounded-lg">
-        </div>
-      </section>
-
-      <section class="flex justify-evenly mb-10 mt-32">
-
-        <div>
-          <img src="https://media.assettype.com/afkgaming/import/media/images/79157-8654d3cc20b7721bf2542d221ea235be.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max" alt="" class="h-auto w-[35rem] rounded-lg">
-        </div>
-
-           <div class="w-[30rem]">
-          <h3 class="font-light text-[40px] text-yellow-200 p-4">FOR TEACHERS</h3>
-          <P class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, quasi. Tempora, non voluptatem quia dolore, eos nesciunt doloremque veniam quis minus ipsa eum deleniti magni quibusdam voluptatum. Minima deleniti ipsa quidem earum, a inventore </P>
-          <button type="submit" class="border border-yellow-300 px-7 mt-9 rounded-lg bg-yellow-400 py-2">GET START <i class='bx bxs-hand-right'></i></button>
-        </div>
-      </section>
-
-      <section class="flex justify-evenly mb-10 mt-32">
-           <div class="w-[30rem]">
-          <h3 class=" text-[40px] font-bold text-yellow-200 p-4">GLOBAL FORUM</h3>
-          <P class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, quasi. Tempora, non voluptatem quia dolore, eos nesciunt doloremque veniam quis minus ipsa eum deleniti magni quibusdam voluptatum. Minima deleniti ipsa quidem earum, a inventore </P>
-          <button type="submit" class="border border-yellow-300 px-7 mt-9 rounded-lg bg-yellow-400 py-2">GET START <i class='bx bxs-hand-right'></i></button>
-        </div>
-
-          <div>
-          <img src="https://preview.redd.it/aldous-and-nana-mistbender-skin-cr-abysall-min-v0-0um5rhct10qb1.jpg?auto=webp&s=7f5032a6d44e6213ea54f50d1ff88d518b75ed8a" alt="" class="h-auto w-[35rem] rounded-lg">
+        <div class="w-full lg:w-auto flex justify-center">
+          <img
+            src="https://img.freepik.com/premium-photo/happy-cartoon-3d-programmer-hacker_1124848-5371.jpg?w=360"
+            alt="3D Cartoon Programmer"
+            class="h-auto w-[20rem] sm:w-[25rem] lg:w-[30rem] rounded-lg object-cover"
+          />
         </div>
       </section>
 
-      <section class="flex justify-evenly mb-10 mt-32">
-    <div>
-          <img src="https://cdn.oneesports.gg/cdn-data/2023/11/MLBB_AvatarofTime_Angela_splashart.jpg" alt="" class="h-auto w-[35rem] rounded-lg">
+      <section
+        class="flex gap-8 justify-center lg:justify-evenly mb-10 mt-32 p-4"
+      >
+        <div class="w-full lg:w-auto flex justify-center">
+          <img
+            src="https://img.freepik.com/free-photo/view-3d-businessman_23-2150709814.jpg"
+            alt="3D Businessman"
+            class="h-auto w-[20rem] sm:w-[25rem] lg:w-[30rem] rounded-lg object-cover"
+          />
         </div>
 
-           <div class="w-[30rem]">
-          <h3 class=" text-[40px] font-bold text-yellow-200 p-4">Citificate Provider</h3>
-          <P class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, quasi. Tempora, non voluptatem quia dolore, eos nesciunt doloremque veniam quis minus ipsa eum deleniti magni quibusdam voluptatum. Minima deleniti ipsa quidem earum, a inventore </P>
-          <button type="submit" class="border border-yellow-300 px-7 mt-9 rounded-lg bg-yellow-400 py-2">GET START <i class='bx bxs-hand-right'></i></button>
+        <div class="w-full lg:w-[30rem] mt-8 lg:mt-0 px-4">
+          <h3
+            class="font-light text-[30px] sm:text-[35px] lg:text-[40px] text-yellow-200 p-2 sm:p-4"
+          >
+            FOR TEACHERS
+          </h3>
+          <p class="text-base sm:text-lg lg:text-xl leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
+            quasi. Tempora, non voluptatem quia dolore, eos nesciunt doloremque
+            veniam quis minus ipsa eum deleniti magni quibusdam voluptatum.
+            Minima deleniti ipsa quidem earum, a inventore.
+          </p>
+          <button
+            type="submit"
+            class="border border-yellow-300 px-7 mt-6 lg:mt-9 rounded-lg bg-yellow-400 py-2 hover:bg-yellow-500 transition"
+          >
+            GET START <i class="bx bxs-hand-right"></i>
+          </button>
         </div>
       </section>
 
-      <section class="flex justify-evenly mb-10 mt-32">
-
-           <div class="w-[30rem]">
-          <h3 class=" text-[40px] font-bold text-yellow-200 p-4">Rate and Reviews</h3>
-          <P class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, quasi. Tempora, non voluptatem quia dolore, eos nesciunt doloremque veniam quis minus ipsa eum deleniti magni quibusdam voluptatum. Minima deleniti ipsa quidem earum, a inventore </P>
-          <button type="submit" class="border border-yellow-300 px-7 mt-9 rounded-lg bg-yellow-400 py-2">GET START <i class='bx bxs-hand-right'></i></button>
+      <section
+        class="flex justify-center lg:justify-evenly gap-8 mb-10 mt-32 p-4"
+      >
+        <div class="w-full lg:w-[30rem]">
+          <h3
+            class="text-[30px] sm:text-[35px] lg:text-[40px] font-bold text-yellow-200 p-2 sm:p-4"
+          >
+            GLOBAL FORUM
+          </h3>
+          <p class="text-base sm:text-lg lg:text-xl leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
+            quasi. Tempora, non voluptatem quia dolore, eos nesciunt doloremque
+            veniam quis minus ipsa eum deleniti magni quibusdam voluptatum.
+            Minima deleniti ipsa quidem earum, a inventore.
+          </p>
+          <button
+            type="submit"
+            class="border border-yellow-300 px-7 mt-6 lg:mt-9 rounded-lg bg-yellow-400 py-2 hover:bg-yellow-500 transition"
+          >
+            GET START <i class="bx bxs-hand-right"></i>
+          </button>
         </div>
 
-            <div>
-          <img src="https://cdn.oneesports.gg/cdn-data/wp-content/uploads/2020/07/MLBB_Angela_SummerVibes_SummerSkin.jpg" alt="" class="h-auto w-[35rem] rounded-lg">
+        <div class="w-full lg:w-auto flex justify-center">
+          <img
+            src="https://flux-image.com/_next/image?url=https%3A%2F%2Fai.flux-image.com%2Fflux%2F663bc5a9-30f3-4f17-8b5b-0c3135484b89.jpg&w=3840&q=75"
+            alt="Global Forum Image"
+            class="h-auto w-[20rem] sm:w-[25rem] lg:w-[30rem] rounded-lg object-cover"
+          />
         </div>
       </section>
 
-       <h2
+      <section
+        class="flex justify-center lg:justify-evenly gap-8 mb-10 mt-32 p-4"
+      >
+        <div class="w-full lg:w-auto flex justify-center">
+          <img
+            src="https://img.freepik.com/free-vector/3d-cartoon-style-certificate-with-gold-medal-icon-diploma-document-award-white-background-flat-vector-illustration-quality-guarantee-wining-victory-competition-championship-concept_778687-982.jpg"
+            alt="3D Certificate Illustration"
+            class="h-auto w-[20rem] sm:w-[25rem] lg:w-[30rem] rounded-lg"
+          />
+        </div>
+
+        <div class="w-full lg:w-[30rem]">
+          <h3
+            class="text-[30px] sm:text-[35px] lg:text-[40px] font-bold text-yellow-200 p-2 sm:p-4"
+          >
+            Certificate Provider
+          </h3>
+          <p class="text-base sm:text-lg lg:text-xl leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
+            quasi. Tempora, non voluptatem quia dolore, eos nesciunt doloremque
+            veniam quis minus ipsa eum deleniti magni quibusdam voluptatum.
+            Minima deleniti ipsa quidem earum, a inventore.
+          </p>
+          <button
+            type="submit"
+            class="border border-yellow-300 px-7 mt-6 lg:mt-9 rounded-lg bg-yellow-400 py-2 hover:bg-yellow-500 transition"
+          >
+            GET START <i class="bx bxs-hand-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="flex justify-center lg:justify-evenly gap-8 mb-10 mt-32 p-4"
+      >
+        <div class="w-full lg:w-[30rem]">
+          <h3
+            class="text-[30px] sm:text-[35px] lg:text-[40px] font-bold text-yellow-200 p-2 sm:p-4"
+          >
+            Rate and Reviews
+          </h3>
+          <p class="text-base sm:text-lg lg:text-xl leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
+            quasi. Tempora, non voluptatem quia dolore, eos nesciunt doloremque
+            veniam quis minus ipsa eum deleniti magni quibusdam voluptatum.
+            Minima deleniti ipsa quidem earum, a inventore.
+          </p>
+          <button
+            type="submit"
+            class="border border-yellow-300 px-7 mt-6 lg:mt-9 rounded-lg bg-yellow-400 py-2 hover:bg-yellow-500 transition"
+          >
+            GET START <i class="bx bxs-hand-right"></i>
+          </button>
+        </div>
+
+        <div class="w-full lg:w-auto flex justify-center">
+          <img
+            src="https://cdn3d.iconscout.com/3d/premium/thumb/certificate-3d-icon-download-in-png-blend-fbx-gltf-file-formats--certification-diploma-degree-law-justice-pack-icons-4897686.png"
+            alt="Certificate 3D Icon"
+            class="h-auto w-[20rem] sm:w-[25rem] lg:w-[30rem] rounded-lg"
+          />
+        </div>
+      </section>
+
+      <h2
         class="flex justify-center items-center mt-10 mb-10 text-blue-600 text-[2rem]"
       >
         ទាញយកកម្មវិធី
       </h2>
-      <section class="flex justify-evenly mb-10 mt-32">
-        
-
-<div class="  w-[30rem] h-[20rem] top-[3rem] relative p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-    <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Work fast from anywhere</h5>
-    <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Stay up to date and move work forward with Flowbite on iOS & Android. Download the app today.</p>
-    <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
-        <a href="#" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-            <svg class="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg>
-            <div class="text-left rtl:text-right">
+      <section
+        class="flex flex-wrap justify-center lg:justify-evenly gap-8 mb-10 mt-32 p-4"
+      >
+        <div
+          class="w-full lg:w-[30rem] h-auto p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
+            Work fast from anywhere
+          </h5>
+          <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">
+            Stay up to date and move work forward with Flowbite on iOS &
+            Android. Download the app today.
+          </p>
+          <div
+            class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse"
+          >
+            <a
+              href="#"
+              class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+            >
+              <svg
+                class="me-3 w-7 h-7"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="apple"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+                ></path>
+              </svg>
+              <div class="text-left rtl:text-right">
                 <div class="mb-1 text-xs">Download on the</div>
-                <div class="-mt-1 font-sans text-sm font-semibold">Mac App Store</div>
-            </div>
-        </a>
-        <a href="#" class="  sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-            <svg class="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
-            <div class="text-left rtl:text-right">
+                <div class="-mt-1 font-sans text-sm font-semibold">
+                  Mac App Store
+                </div>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+            >
+              <svg
+                class="me-3 w-7 h-7"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="google-play"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"
+                ></path>
+              </svg>
+              <div class="text-left rtl:text-right">
                 <div class="mb-1 text-xs">Get in on</div>
-                <div class="-mt-1 font-sans text-sm font-semibold">Google Play</div>
-            </div>
-        </a>
-    </div>
-</div>
+                <div class="-mt-1 font-sans text-sm font-semibold">
+                  Google Play
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
 
+        <div class="w-full lg:w-auto flex justify-center">
+          <img
+            src="https://cdn3d.iconscout.com/3d/premium/thumb/web-development-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--html-logo-java-developer-pack-design-illustrations-5618447.png"
+            alt="Web Development 3D Illustration"
+            class="h-auto w-[20rem] sm:w-[25rem] lg:w-[30rem] rounded-lg"
+          />
+        </div>
+      </section>
 
-<div>
-  <img src="https://battleverse.io/wp-content/uploads/c61e5b1b-2628-4741-be88-4ee9f073d6301.jpg" alt="" class="h-auto w-[50rem] rounded-lg">
-</div>
+      <h2
+        class="flex justify-center items-center mt-10 mb-10 text-yellow-300 text-[8rem]"
+      >
+        <i class="bx bxs-message-rounded-dots"></i>
+      </h2>
 
+      <h2
+        class="flex justify-center items-center mt-10 mb-10 text-blue-600 text-[2rem]"
+      >
+        សំណួរដែលគេតែងសួរញឹកញាប់
+      </h2>
+
+      <section class="flex justify-evenly items-center mb-44">
+        <div>
+          <img
+            src="https://img.freepik.com/premium-photo/3d-rendering-beautiful-school-girl-isolated-white-background_856795-15203.jpg"
+            class="h-auto w-[20rem]"
+            alt=""
+          />
+        </div>
+        <div class="">
+          <form class="mx-auto py-6">
+            <label for="underline_select" class="sr-only"
+              >Underline select</label
+            >
+            <select
+              id="underline_select"
+              class="block py-2.5 px-0 w-full text-xl text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+            >
+              <option selected>តើតម្រូវការអ្វីខ្លសម្រាប់រៀនOnline?</option>
+            </select>
+          </form>
+
+          <form class="mx-auto py-6">
+            <label for="underline_select" class="sr-only"
+              >Underline select</label
+            >
+            <select
+              id="underline_select"
+              class="block py-2.5 px-0 w-full text-xl text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+            >
+              <option selected>
+                តើខ្ញុំត្រូវធ្វើអ្វីដើម្បីប្រើប្រាស់ប្រព័ន្ធនេះបាន?
+              </option>
+            </select>
+          </form>
+
+          <form class="mx-auto py-6">
+            <label for="underline_select" class="sr-only"
+              >Underline select</label
+            >
+            <select
+              id="underline_select"
+              class="block py-2.5 px-0 w-full text-xl text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+            >
+              <option selected>
+                តើមានអ្វីខុសគ្នារវាងការបញ្ជាក់ឯកសារនៅតាមអ៊ីនធឺណិត
+                និងការដាក់ប្រព័ន្ធដោយផ្ទាល់?
+              </option>
+            </select>
+          </form>
+
+          <form class="mx-auto py-6">
+            <label for="underline_select" class="sr-only"
+              >Underline select</label
+            >
+            <select
+              id="underline_select"
+              class="block py-2.5 px-0 w-full text-xl text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+            >
+              <option selected>
+                តើខ្ញុំត្រូវប្រើប្រាស់ឯកសារអ្វីខ្លះ
+                និងត្រូវដាក់វាទៅកន្លែងណាមួយដើម្បីបំពេញ?
+              </option>
+            </select>
+          </form>
+
+          <form class="mx-auto py-6">
+            <label for="underline_select" class="sr-only"
+              >Underline select</label
+            >
+            <select
+              id="underline_select"
+              class="block py-2.5 px-0 w-full text-xl text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+            >
+              <option selected>
+                តើការបញ្ជាក់ឯកសារបានបំពេញហើយដែរឬទេ? និងត្រូវប្រើប្រាស់បែបណា?
+              </option>
+            </select>
+          </form>
+        </div>
+
+        <div>
+          <img
+            src="https://img.freepik.com/premium-photo/3d-render-cute-little-schoolboy-isolated-white-background_856795-20086.jpg"
+            alt=""
+            class="h-auto w-[20rem]"
+          />
+        </div>
       </section>
     </main>
   </body>
+
+  <footer>
+    <footer class="bg-stone-300">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="https://flowbite.com/" class="flex items-center">
+              <img
+                src="https://www.cstad.edu.kh/_next/image?url=%2Fschool-logo%2Flogo-white-version.png&w=128&q=75"
+                class="h-10 me-3"
+                alt="FlowBite Logo"
+              />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              ></span>
+            </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Resources
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="https://flowbite.com/" class="hover:underline"
+                    >Flowbite</a
+                  >
+                </li>
+                <li>
+                  <a href="https://tailwindcss.com/" class="hover:underline"
+                    >Tailwind CSS</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Follow us
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    class="hover:underline"
+                    >Github</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://discord.gg/4eeurUVvTy"
+                    class="hover:underline"
+                    >Discord</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2
+                class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Legal
+              </h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2023
+            <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a
+            >. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 8 19"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 16"
+              >
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
+                />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 17"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+            >
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Dribbble account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </footer>
 </html>
+
+
+<script>
+  // Get the menu toggle button and menu
+  const menuButton = document.querySelector('[data-collapse-toggle="navbar-cta"]');
+  const menu = document.getElementById('navbar-cta');
+
+  // Add event listener to toggle the menu visibility
+  menuButton.addEventListener('click', () => {
+    const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', !isExpanded);
+    menu.classList.toggle('hidden'); // Tailwind's 'hidden' class to toggle visibility
+  });
+</script>
