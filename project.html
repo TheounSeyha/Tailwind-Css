@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>COLOR CLONE</title>
+
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="md:hidden flex justify-center border-b-[1.5px] fixed w-screen py-3"
+    >
+      <button class="absolute left-4 text-xl top-1/2 -translate-y-1/2">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="#">
+        <img src="https://coolors.co/assets/img/logo.svg" alt="" />
+      </a>
+    </header>
+    <!-- big navbar -->
+    <header class="hidden md:flex justify-between p-3 border-b-[1.5px]">
+      <div class="flex items-center gap-5">
+        <a href="#" 
+          ><img src="https://coolors.co/assets/img/logo.svg" alt="color logo"
+        /></a>
+        <a href="#" class=" group hidden lg:flex gap-3 ">
+          <div class="border-2 group-hover:border-gray-700  size-8 flex justify-center items-center rounded"><i class="fa-solid fa-poo-storm text-orange-400"></i></div>
+          <p class="text-[12px] leading-4 text-gray-600">
+            Chat with Gemini right in the new AI assistance panel and get help
+            with <span class="font-bold text-black group-hover:underline ">styling your page</span>.
+          </p>
+        </a>
+      </div>
+      <ul class="flex gap-6 items-center cursor-pointer">
+        <li class="hover:text-blue-500">Tools</li>
+        <li class="text-pink-500 hover:text-orange-500">
+          <a href="#">Go pro</a>
+        </li>
+        <li class="w-[1px] h-8 bg-red-300"></li>
+        <li class="hover:text-blue-500"><a href="#">Sign In</a></li>
+        <li>
+          <a
+            href="#"
+            class="bg-blue-500 hover:bg-blue-700 text-white py-[8px] px-3 rounded-xl"
+            >Sign Up</a
+          >
+        </li>
+      </ul>
+    </header>
+  </body>
+</html>
